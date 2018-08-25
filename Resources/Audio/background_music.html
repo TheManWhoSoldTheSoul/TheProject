@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <!--<link href="Resources/CSS/font.css" rel="stylesheet" type="text/css">
+        <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css">
+        <link href="Resources/CSS/query.css" rel="stylesheet" type="text/css">-->
+        
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <title>SPECTER</title>
+    </head>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            background-color: #000;
+        }
+        #bgm{
+            width: 50%;
+            height: 50%;
+            background-color: rebeccapurple;
+        }
+    </style>
+
+    <body>
+        <!--<iframe src="Codec.mp3" autoplay></iframe>
+        
+        <audio src="mgs_menu_theme.mp3" allow ="autoplay" id="bgm"></audio>-->
+		
+        <video autoplay loop controls name="media" id="bgm">
+          <source src="air_ducts_ambience_sound.mp3" type="audio/mp3">
+        </video>
+        
+    </body>
+    
+    
+    <script type="text/javascript">
+        var bgm = document.getElementById("bgm");
+        bgm.volume = 0.0;
+        setTimeout(function(){
+             bgm.volume = 0.001;
+        },125);
+        setTimeout(function(){
+             bgm.volume = 0.002;
+        },250);
+        setTimeout(function(){
+             bgm.volume = 0.005;
+        },500);
+        setTimeout(function(){
+             bgm.volume = 0.007;
+        },750);
+        setTimeout(function(){
+             bgm.volume = 0.01;
+        },1000);
+        setTimeout(function(){
+             bgm.volume = 0.02;
+        },1250);
+        setTimeout(function(){
+             bgm.volume = 0.05;
+        },1500);
+        setTimeout(function(){
+             bgm.volume = 0.07;
+        },1750);
+        setTimeout(function(){
+             bgm.volume = 0.1;
+        },2000);
+        
+        setTimeout(function(){
+             bgm.volume = 0.12;
+        },2250);
+        setTimeout(function(){
+             bgm.volume = 0.15;
+        },2500);
+        
+        setTimeout(function(){
+             bgm.volume = 0.17;
+        },2750);
+        
+        setTimeout(function(){
+             bgm.volume = 0.2;
+        },3000);
+        
+        setTimeout(function(){
+             bgm.volume = 0.22;
+        },3250);
+        
+        setTimeout(function(){
+             bgm.volume = 0.25;
+        },3500);
+        
+        setTimeout(function(){
+             bgm.volume = 0.27;
+        },3750);
+        
+        setTimeout(function(){
+             bgm.volume = 0.3;
+        },4000);
+        
+        setTimeout(function(){
+             bgm.volume = 0.32;
+        },4250);
+        
+        setTimeout(function(){
+             bgm.volume = 0.35;
+        },4500);
+        
+        setTimeout(function(){
+             bgm.volume = 0.37;
+        },4750);
+        
+        setTimeout(function(){
+             bgm.volume = 0.4;
+        },5000);
+        
+        setTimeout(function(){
+             bgm.volume = 0.42;
+        },5250);
+        
+        setTimeout(function(){
+             bgm.volume = 0.45;
+        },5500);
+        
+        setTimeout(function(){
+             bgm.volume = 0.47;
+        },5750);
+        
+        setTimeout(function(){
+             bgm.volume = 0.5;
+        },6000);
+        
+        
+        document.onkeydown = function(e){
+            var onKey = e.keyCode;
+
+            if(onKey == 32){
+                bgm.play();
+            }
+           
+        };
+        
+
+    </script>
+</html>
